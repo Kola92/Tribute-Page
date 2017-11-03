@@ -1,0 +1,104 @@
+
+html, body {
+ background-color: #CCC;
+ margin: 5px 3px 0 3px;
+ font-family: Quintessential, cursive, serif;
+}
+
+.container {
+  margin: 0 45px;
+  overflow: hidden;
+}
+
+#img-container {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#martin_luther {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 1.8em;
+}
+
+h2 {
+  font-family: Courgette, cursive, serif;
+  font-size: 38px;
+  text-align: center;
+}
+
+.title {
+  margin-top: -5px;
+  padding-bottom: 15px;
+} 
+
+h3 {
+  font-family: Courgette, cursive, serif;
+  font-size: 35px;
+  text-align: center;
+  color: #999;
+  font-weight: 800;
+}
+
+p {
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+iframe {
+  float: right;
+  border: 4px rgb(182, 150, 150)
+}
+
+
+/* BLOCKQUOTE */
+blockquote {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+}
+
+/*body { quotes: '\201c' '\201d'; }
+blockquote:before { content: open-quote; }
+blockquote:after  { content: close-quote; }*/
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 3.5rem;
+  top: 296.2rem;
+}
+
+blockquote::after{
+  content: "\201D"; /*Unicode for Right Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 8.7rem;
+  top: 318.7rem;
+}
+
+
+/* IMAGE SLIDER */
+
+footer {
+  text-align: center;
+}
